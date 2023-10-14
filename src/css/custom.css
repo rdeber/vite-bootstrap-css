@@ -1,0 +1,99 @@
+/*! ========================
+    | CMS CUSTOM CSS       |
+    ======================== */
+
+/* ==========================================================================
+   Global Variables
+
+   Overide Bootstrap variables here...
+   ========================================================================== */
+:root {
+  /* --bs-blue: #0d6efd;
+      --bs-indigo: #6610f2;
+      --bs-purple: #6f42c1;
+      --bs-pink: #d63384;
+      --bs-red: #dc3545;
+      --bs-orange: #fd7e14;
+      --bs-yellow: #ffc107;
+      --bs-green: #198754;
+      --bs-teal: #20c997;
+      --bs-cyan: #0dcaf0;
+      --bs-white: #fff;
+      --bs-gray: #6c757d;
+      --bs-gray-dark: #343a40; */
+  --bs-primary: #483d8b;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+  --heading-font: "Libre Baskerville", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* ==========================================================================
+       Base Styles
+       ========================================================================== */
+@font-face {
+  font-display: swap;
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/fonts/libre-baskerville-v14-latin-regular.woff2") format("woff2"),
+       url("/src/fonts/libre-baskerville-v14-latin-regular.ttf") format("truetype");
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+::-moz-selection {
+  background: var(--bs-primary);
+  color: var(--bs-light);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--bs-primary);
+  color: var(--bs-light);
+  text-shadow: none;
+}
+
+/* ==========================================================================
+       Custom Styles
+       ========================================================================== */
+body {
+  text-size-adjust: 100%;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--bs-primary);
+    font-family: var(--heading-font);
+  }
+}
+
+.hero-banner {
+  background: transparent url("/src/images/banner.jpg") no-repeat 0 0;
+  background-size: cover;
+
+  .hero-banner-text {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3em;
+    border-radius: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+}

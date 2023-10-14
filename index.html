@@ -1,13 +1,217 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Jahia Starter Template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Put site description here">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#fff">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/custom.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+
+    <header class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="/src/images/logo.png" data-image-name='logo' class="d-block mx-lg-auto img-fluid" alt="Site Name Here" width="362" height="143">
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2">Login</button>
+          <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md" aria-label="Fourth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Expand at md</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="hero-banner p-5 mb-4 bg-light">
+        <div class="container-fluid py-5">
+          <div class="row justify-content-end">
+            <div class="col-lg-6 hero-banner-text">
+              <h1 class="display-5 fw-bold">Banner Title</h1>
+              <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis, sapien ut fermentum mattis.</p>
+              <button class="btn btn-primary btn-lg" type="button">Banner Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/src/images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis, sapien ut fermentum mattis, massa erat aliquam metus, vitae condimentum diam leo in quam. Pellentesque feugiat ipsum mauris, a accumsan lectus tincidunt ac. Integer fermentum nisi lectus, bibendum.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/src/images/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold lh-1 mb-3">Responsive right-aligned hero with image</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis, sapien ut fermentum mattis, massa erat aliquam metus, vitae condimentum diam leo in quam. Pellentesque feugiat ipsum mauris, a accumsan lectus tincidunt ac. Integer fermentum nisi lectus, bibendum.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h2 class="display-4 fw-bold lh-1">Border hero with cropped image and shadows</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis, sapien ut fermentum mattis, massa erat aliquam metus, vitae condimentum diam leo in quam. Pellentesque feugiat ipsum mauris, a accumsan lectus tincidunt ac. Integer fermentum nisi lectus, bibendum.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="/src/images/bootstrap-docs.png" alt="" width="795" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>Heading</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">We know that opening a 529 plan account can feel overwhelming. More than 25,000 families have used an Arkansas 529 plan account to save for education.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h2>Features</h2>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" href="#">Cool stuff</a></li>
+            <li><a class="link-secondary" href="#">Random feature</a></li>
+            <li><a class="link-secondary" href="#">Team feature</a></li>
+            <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+            <li><a class="link-secondary" href="#">Another one</a></li>
+            <li><a class="link-secondary" href="#">Last time</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div id="app"></div>
+    <script type="module" src="/main.js"></script> -->
+    <!-- <img data-image-name="image1" src="/src/images/logo.png" alt="Image 2" />
+
+    <script type="module">
+      import images from "/javascript/imageLoader.js";
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const imageElements = document.querySelectorAll("[data-image-name]");
+
+        imageElements.forEach((img) => {
+          const imageName = img.getAttribute("data-image-name");
+          if (images[imageName]) {
+            img.src = images[imageName];
+          }
+        });
+      });
+    </script> -->
+
+    <script src="/src/js/bootstrap.bundle.min.js"></script>
+    <!-- <script type="module" src="/javascript/custom.js"></script> -->
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
